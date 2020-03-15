@@ -1,0 +1,236 @@
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 30px 30px 0 125px;
+}
+
+nav a {
+  color: dimgrey;
+  margin-right: 25px;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.current-link {
+  color: black;
+}
+
+#wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+  background-color: whitesmoke;
+  background-size: 16px 16px;
+}
+
+#left-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 600px;
+  width: 600px;
+  background-image: url("Pictures/left_side_overlay.jpg");
+  border: #F96F6D solid 3px;
+  border-radius: 10px;
+}
+
+#left-box:hover {
+  border: #f73f3c solid 3px;
+}
+
+#left-inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 550px;
+  padding-left: 30px;
+}
+
+.left-logo-and-team-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#center p {
+  font-size: xx-large;
+  color: dimgrey;
+  -webkit-transition: color 1s, font-size 1s;
+  transition: color 1s, font-size 1s;
+}
+
+#center p:hover {
+  font-size: 80px;
+  color: black;
+}
+
+#right-box {
+  height: 600px;
+  width: 600px;
+  background-image: url("Pictures/right_side_overlay.jpg");
+  border: #36aedb solid 3px;
+  border-radius: 10px;
+}
+
+#right-box:hover {
+  border: #2292bc solid 3px;
+}
+
+#right-inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 550px;
+  padding-right: 30px;
+}
+
+.right-logo-and-team-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-logo {
+  width: 13.5%;
+  height: 13.5%;
+  border-radius: 50%;
+}
+
+.team-name {
+  font-size: x-large;
+  text-transform: uppercase;
+  padding: 0 15px 0 15px;
+}
+
+.player-name {
+  font-size: xx-large;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: whitesmoke;
+}
+
+/* === LEADERBOARD.html === */
+#leaderboard-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1000px;
+  background-color: whitesmoke;
+}
+
+.leaderboard-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 1420px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: #F96F6D solid 3px;
+  border-radius: 10px;
+  color: #3c3c3c;
+}
+
+.leaderboard-row:hover {
+  border-color: #36aedb;
+}
+
+.leaderboard-element {
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=styles2.css.map */

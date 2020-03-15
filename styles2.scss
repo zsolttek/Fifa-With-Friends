@@ -1,0 +1,178 @@
+$background-color: whitesmoke;
+$red-border: #F96F6D;
+$blue-border: #36aedb;
+$grey: dimgrey;
+$link-colour: black;
+
+body {
+  background-color: $background-color;
+}
+
+header {
+  display: flex;
+  background-color: $background-color;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 30px 30px 0 125px;
+}
+
+nav a {
+  color: $grey;
+  margin-right: 25px;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color:$link-colour;
+}
+
+.current-link {
+  color: $link-colour;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 700px;
+  background-color: $background-color;
+  background-size:16px 16px;
+}
+
+#left-box {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 600px;
+  background-image: url("Pictures/left_side_overlay.jpg");
+  border: $red-border solid 3px;
+  border-radius: 10px;
+}
+
+#left-box:hover {
+  border: darken($color: $red-border, $amount: 10) solid 3px;
+}
+
+#left-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 550px;
+  padding-left: 30px;
+}
+
+.left-logo-and-team-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+#center p{
+  font-size: xx-large;
+
+  color: $grey;
+  -webkit-transition: color 1s, font-size 1s;
+  -moz-transition: color 1s, font-size 1s;
+  -o-transition: color 1s, font-size 1s;
+  transition: color 1s, font-size 1s;
+}
+
+#center p:hover{
+  font-size: 80px;
+  color: black;
+}
+
+
+#right-box {
+  height: 600px;
+  width: 600px;
+  background-image: url("Pictures/right_side_overlay.jpg");
+  border: $blue-border solid 3px;
+  border-radius: 10px;
+}
+
+#right-box:hover {
+  border: darken($color: $blue-border, $amount: 10) solid 3px;
+}
+
+#right-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 550px;
+  padding-right: 30px;
+}
+
+.right-logo-and-team-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.team-logo {
+  width: 13.5%;
+  height: 13.5%;
+  border-radius: 50%;
+}
+
+.team-name {
+  font-size: x-large;
+  text-transform: uppercase;
+  padding: 0 15px 0 15px;
+} 
+
+.player-name {
+  font-size: xx-large;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: $background-color;
+}
+
+/* === LEADERBOARD.html === */
+
+#leaderboard-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+  background-color: $background-color;
+}
+
+.leaderboard-row {
+  display: flex;
+  height: 100px;
+  width: 1420px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: $red-border solid 3px;
+  border-radius: 10px;
+  color: #3c3c3c;
+}
+
+.leaderboard-row:hover {
+  border-color: $blue-border;
+}
+
+.leaderboard-element {
+  font-size: xx-large;
+  text-transform: uppercase;
+}
